@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eren Restoran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+    <header >
+        <h1 data-aos="zoom-in">Eren Restoran 🍴</h1>
+    </header>
+    <section id="rezervasyon" class="reservation-section" data-aos="zoom-in">
+        <h2 data-aos="zoom-in">Rezervasyon Yap</h2>
+        <form id="reservationForm" class="reservationForm">
+            <!--Ad Soyad Giriş-->
+            <label for="name" data-aos="zoom-in">Ad Soyad:</label>
+            <input type="text" id="name" name="name" required >
+            <!--Telefon No-->
+            <label for="phone" data-aos="zoom-in">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <!--Tarih Seçimi-->
+            <label for="date" data-aos="zoom-in">Tarih:</label>
+            <input type="date" id="date" name="date" required>
+            <!--Saat Seçimi-->
+            <label for="time" data-aos="zoom-in">Saat:</label>
+            <input type="time" id="time" name="time" required>
+            <!-- Kişi Sayısı-->
+            <label for="people" data-aos="zoom-in">Kişi Sayısı:</label>
+            <input type="number" id="people" name="people" min="1" max="20" required>
+            <!--Gönderme Butonu-->
+            <button type="submit" data-aos="zoom-in">Rezervasyon Yap </button>
+            <p id="confirmationMessage" class="confrimation-message"></p>
+        </form>
+    </section>
+    <section class="menu" data-aos="zoom-in">
+        <h2 data-aos="zoom-in">Ana Yemekler 🍽️</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/Kebab.png" alt="Kebab" data-aos="zoom-in">
+                <h3 data-aos="zoom-in">Kebap</h3>
+                <p data-aos="zoom-in"><strong>İstanbul</strong> usulü, <strong>bol baharatlı</strong> kebap.</p>
+                <span data-aos="zoom-in">₺150</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/Pasta.png" alt="Makarna" data-aos="zoom-in">
+                <h3 data-aos="zoom-in">Makarna</h3>
+                <p data-aos="zoom-in"><strong>Domates</strong> soslu, <strong>parmesanlı</strong></p>
+                <span data-aos="zoom-in">₺85</span>
+            </div>
+        </div>
+        <h2 data-aos="zoom-in">Tatlılar 🧁</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/Sufle.png" alt="Sufle" data-aos="zoom-in">
+                <h3 data-aos="zoom-in">Sufle</h3>
+                <p data-aos="zoom-in">İçi <strong>akışkan çikolatalı</strong> sufle.</p>
+                <span data-aos="zoom-in">₺60</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/baklava.png" alt="bakalva" data-aos="zoom-in">
+                <h3 data-aos="zoom-in">Baklava</h3>
+                <p data-aos="zoom-in"><strong>Antep</strong> fıstıklı, <strong>bol</strong> şerbetli.</p>
+                <span data-aos="zoom-in">₺70</span>
+            </div>
+        </div>
+
+        <h2 data-aos="zoom-in">İçecekler 🧃</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/Ayran.png" alt="Ayran" data-aos="zoom-in">
+                <h3 data-aos="zoom-in">Ayran</h3>
+                <p data-aos="zoom-in">Yoğurttan <strong>taze</strong> yapılmış <strong>soğuk</strong> ayran.</p>
+                <span data-aos="zoom-in">₺15</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/limonata.png" alt="Limonata" data-aos="zoom-in">
+                <h3 data-aos="zoom-in">Limonata</h3>
+                <p data-aos="zoom-in"><strong>Doğal</strong> limon, <strong>nane</strong> ve <strong>buzla</strong>.</p>
+                <span data-aos="zoom-in">₺20</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Cemal Eren Aldıbaş 2025 | Tüm Hakları Saklıdır</p>
+        <p>İletişim : <a href="mailto:erenaldibas@gmail.com">erenaldibas@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        })
+    </script>
+</body>
+
+</html>
